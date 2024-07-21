@@ -2,7 +2,7 @@ using System.Drawing;
 
 namespace TelCo.ColorCoder
 {
-    public class ColorMap
+    public class ColorMapping
     {
         public static readonly Color[] MajorColors = 
             { Color.White, Color.Red, Color.Black, Color.Yellow, Color.Violet };
