@@ -4,10 +4,10 @@ namespace TelCo.ColorCoder
 {
     public abstract class ColorPairMapperBase
     {
-        public abstract ColorPair MapNumberToColorPair(int pairNumber);
-        public abstract int MapColorPairToNumber(ColorPair pair);
+        public abstract ColorPair GetColorPairFromNumber(int pairNumber);
+        public abstract int GetNumberFromColorPair(ColorPair pair);
 
-        protected void EnsureValidPairNumber(int pairNumber)
+        protected void ValidatePairNumber(int pairNumber)
         {
             int maxPairNumber = ColorMapping.MajorColors.Length * ColorMapping.MinorColors.Length;
             if (pairNumber < 1 || pairNumber > maxPairNumber)
