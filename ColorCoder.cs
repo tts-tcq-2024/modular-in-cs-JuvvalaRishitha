@@ -17,8 +17,8 @@ namespace TelCo.ColorCoder
 
         public static int GetPairNumberFromColor(ColorPair pair)
         {
-            int majorIndex = ColorMapping.GetColorIndex(pair.MajorColor, ColorMap.MajorColors);
-            int minorIndex = ColorMapping.GetColorIndex(pair.MinorColor, ColorMap.MinorColors);
+            int majorIndex = ColorMapping.GetColorIndex(pair.MajorColor, ColorMapping.MajorColors);
+            int minorIndex = ColorMapping.GetColorIndex(pair.MinorColor, ColorMapping.MinorColors);
             if (majorIndex == -1 || minorIndex == -1)
                 throw new ArgumentException($"Unknown Colors: {pair}");
 
