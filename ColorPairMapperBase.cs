@@ -2,7 +2,7 @@ using System;
 
 namespace TelCo.ColorCoder
 {
-    public abstract class BaseColorPairMapper
+    public abstract class ColorPairMapperBase
     {
         public abstract ColorPair GetColorPairFromNumber(int pairNumber);
         public abstract int GetNumberFromColorPair(ColorPair pair);
