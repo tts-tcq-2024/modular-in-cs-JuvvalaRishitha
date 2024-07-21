@@ -1,10 +1,11 @@
 namespace TelCo.ColorCoder
 {
-    class Program
+    public static class TestExecutor
     {
-        static void Main(string[] args)
+        public static void ExecuteAllTests()
         {
-            TestRunner.Run();
+            var tests = new SpecificColorPairMapperTests();
+            tests.RunAllTests();
         }
     }
 }
