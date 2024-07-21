@@ -9,7 +9,7 @@ namespace TelCo.ColorCoder
         public static readonly Color[] MinorColors = 
             { Color.Blue, Color.Orange, Color.Green, Color.Brown, Color.SlateGray };
 
-        public static int GetIndexOfColor(Color color, Color[] colorArray)
+        public static int GetColorIndex(Color color, Color[] colorArray)
         {
             for (int i = 0; i < colorArray.Length; i++)
             {
